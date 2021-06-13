@@ -14,11 +14,11 @@ int main(int argc, char *argv[]){
     char raiz[]={"C:\\xampp\\htdocs\\"};
     strcat(raiz,pasta);
     fflush(stdin);
-    (windows(raiz,pasta)==1)?printf("Projecto criado com Sucesso...\n"):printf("N�o teve exito na cria��o do Projecto...\n");
+    (windows(raiz,pasta)==1)?printf("Projecto criado com Sucesso...\n"):printf("Não teve exito na criação do Projecto...\n");
   #else
     char raiz[]={"/var/www/html"};
     strcat(raiz,pasta);
-    (nix(raiz,pasta)==1)?printf("Projecto criado com Sucesso...\n"):printf("N�o teve exito na cria��o do Projecto...\n");
+    (nix(raiz,pasta)==1)?printf("Projecto criado com Sucesso...\n"):printf("Não teve exito na criação do Projecto...\n");
   #endif
   return 1;
 }
